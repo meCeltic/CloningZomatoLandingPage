@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.heroSection{
+    background-image: url(./images/heroSectionBackground.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navmenu{
+    display: flex;
+    padding: 20px;
+    gap: 27px;
+    margin-right: 15%;
+
+}
+
+.navbar .app{
+    font-size: 13px;
+    padding: 10px;
+    margin-left: 15%;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar i{
+    display: none;
+    padding: 3px;
+    margin-left: 11px;
+    margin-top: 5px;
+    font-size: 21px;
+}
+
+@media only screen and (max-width: 900px){
+    .navbar .app {
+        font-size: 13px;
+        padding: 10px;
+        margin-left: 1%;
+    }
+    .navbar .navmenu{
+        margin-right: 0px;
+        gap: 22px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .navbar a{
+        display: none;
+    }
+    .navbar i{
+        display: flex;
+    }
+    .heroSection{
+        height: 70vh;
+    }
+    .navbar a{
+        font-size: 14px;
+    }
+}
+
+.logoname img{
+    display: flex;
+    width: 25vw;
+}
+
