@@ -24,7 +24,6 @@
     padding: 20px;
     gap: 27px;
     margin-right: 10%;
-
 }
 
 .navbar .app{
@@ -36,10 +35,24 @@
     font-size: 17px;
     display: flex;
 }
+
 .navmenu a{
     color: white;
     text-decoration: none;
     font-size: 17px;
+}
+
+.navmenu i{
+    height: 2.2rem;
+    width: 2.2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 50%;
+    display: none;
 }
 
 .navbar i{
@@ -49,6 +62,105 @@
     margin-top: 5px;
     font-size: 21px;
 }
+
+.logoname{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.logoname .logo{
+    width: 300px;
+}
+
+.logoname .tagline{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.logoname .searchbar{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchLocation, .searchHotel{
+    border: none;
+    padding: 5px;
+    outline: none;
+
+}
+
+.searchLocation{
+    width: 35%;
+    border-right: 1px solid;
+    border-color: #c8c5c5;
+}
+
+.searchHotel{
+    width: 60%;
+    margin-left: 10px;
+}
+
+.container{
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.we_offer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center; 
+}
+
+.we__offer_card{
+    width: 115%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid white;
+    transition: 0.25s;
+}
+
+.we__offer_card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer a{
+    text-decoration: none;   
+}
+
+.we__offer_card:hover{
+    transform: scale(1.05);
+}
+
+.we_offer_content h2{
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    color: rgb(44, 45, 45);
+}
+
+.we_offer_content p{
+    color: rgb(11, 11, 11);
+    font-weight: 300;
+}
+
 
 @media only screen and (max-width: 900px){
     .navbar .app {
@@ -74,52 +186,24 @@
         height: 70vh;
     }
     .navbar .app{
-        display: none;
-        
+        display: none;  
     }
-}
+    .navmenu i{
+        position: absolute;
+        right: 15px;
 
-.logoname{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.logoname .logo{
-    width: 300px;
-}
-.logoname .tagline{
-    font-weight: 400;
-    font-size: 35px;
-}
-
-.logoname .searchbar{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-
-}
-.searchLocation, .searchHotel{
-    border: none;
-    padding: 5px;
-    outline: none;
-
-}
-.searchLocation{
-    width: 35%;
-    border-right: 1px solid;
-    border-color: #c8c5c5;
-}
-.searchHotel{
-    width: 60%;
-    margin-left: 10px;
+    }
+    .navmenu i{
+        display: flex;
+    }
+    .logoname .logo{
+        width: 200px;
+    }
+    .logoname .tagline{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .logoname .searchbar{
+        width: 80%; 
+    }
 }
