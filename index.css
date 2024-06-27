@@ -1,11 +1,13 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-.heroSection{
+/* Hero Section Styles */
+.heroSection {
     background-image: url(./images/heroSectionBackground.png);
     height: 60vh;
     background-size: cover;
@@ -13,20 +15,21 @@
     color: white;
 }
 
-.navbar{
+/* Navbar Styles */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .navmenu{
+.navbar .navmenu {
     display: flex;
     padding: 20px;
     gap: 27px;
     margin-right: 10%;
 }
 
-.navbar .app{
+.navbar .app {
     font-size: 13px;
     padding: 10px;
     margin-left: 15%;
@@ -36,26 +39,24 @@
     display: flex;
 }
 
-.navmenu a{
+.navmenu a {
     color: white;
     text-decoration: none;
     font-size: 17px;
 }
 
-.navmenu i{
+.navmenu i {
     height: 2.2rem;
     width: 2.2rem;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     border: 1px solid rgb(207, 207, 207);
     border-radius: 50%;
     display: none;
 }
 
-.navbar i{
+.navbar i {
     display: none;
     padding: 3px;
     margin-left: 11px;
@@ -63,7 +64,8 @@
     font-size: 21px;
 }
 
-.logoname{
+/* Logo and Tagline Styles */
+.logoname {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,16 +75,16 @@
     text-align: center;
 }
 
-.logoname .logo{
+.logoname .logo {
     width: 300px;
 }
 
-.logoname .tagline{
+.logoname .tagline {
     font-weight: 400;
     font-size: 35px;
 }
 
-.logoname .searchbar{
+.logoname .searchbar {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -93,65 +95,70 @@
     justify-content: center;
 }
 
-.searchLocation, .searchHotel{
+.searchLocation,
+.searchHotel {
     border: none;
     padding: 5px;
     outline: none;
-
 }
 
-.searchLocation{
+.searchLocation {
     width: 35%;
     border-right: 1px solid;
     border-color: #c8c5c5;
 }
 
-.searchHotel{
+.searchHotel {
     width: 60%;
     margin-left: 10px;
 }
 
-.container{
+/* Services Offered Section */
+
+.container {
     margin: 3rem auto;
     width: 90%;
 }
 
-.we_offer{
+.we_offer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    margin-bottom: 6rem;
 }
 
-.we__offer_card{
+.we__offer_card {
     width: 115%;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid white;
     transition: 0.25s;
+    position: relative;
 }
 
-.we__offer_card img{
+.we__offer_card img {
     width: 100%;
     height: 170px;
     object-fit: cover;
     object-position: center;
 }
 
-.we_offer a{
-    text-decoration: none;   
+.we_offer a {
+    text-decoration: none;
 }
 
-.we__offer_card:hover{
+.we__offer_card:hover {
     transform: scale(1.05);
 }
 
-.we_offer_content{
+.we_offer_content {
     padding-left: 15px;
 }
-.we_offer_content h2{
+
+.we_offer_content h2 {
     text-align: left;
     font-weight: 400;
     font-size: 1.3rem;
@@ -159,57 +166,264 @@
     color: rgb(44, 45, 45);
 }
 
-.we_offer_content p{
+.we_offer_content p {
     color: rgb(11, 11, 11);
     font-weight: 300;
 }
 
-.collection_explore h1{
-    font-weight: 600;
+/* Collections Section */
+.collections {
+    margin: 3rem auto;
+    width: 84%;
+    margin-bottom: 10rem;
 }
 
-@media only screen and (max-width: 900px){
+.collection_explore .collection_heading {
+    max-width: 110rem;
+}
+
+.collection_explore .collection_heading{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.collection_explore h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: rgb(28, 28, 28);
+    margin: 0px;
+    margin-left: 90px;
+}
+
+.collection_explore .collection_heading {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-right: 20px;
+}
+
+.collection_heading span:nth-child(2) {
+    color: #F05665;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.collection_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.collection_card_container .card {
+    height: 20rem;
+    min-width: 270px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1 {
+    background-image: url('./images/1.avif');
+}
+
+.card2 {
+    background-image: url('./images/2.avif');
+}
+
+.card3 {
+    background-image: url('./images/collection3.jpg');
+}
+
+.card4 {
+    background-image: url('./images/collection4.jpg');
+}
+
+/* Overlay Styles */
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%, 
+        rgba(0, 0, 0, 0.05) 50%, 
+        rgba(0, 0, 0, 0.05) 85%
+    );
+    z-index: 1;
+}
+
+.collection_card_container .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    z-index: 2;
+}
+
+.content h4 {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Get Mobile App Section */
+.get_the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get_the_app .semiContainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.get_the_app .semiContainer .left{
+    flex: 2;
+}
+
+.get_the_app .semiContainer .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get_the_app .semiContainer .right{
+    flex: 3;  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.right p{
+    font-size: 0.8rem;
+}
+
+.right .radio__button_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right .radio__button_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right .radio__button_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239, 79,95);
+}
+
+.right .input_container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input_container{
+    flex-wrap: wrap;
+}
+.input_container button,
+.input_container input{
+    padding: 10px 12px;
+}
+
+.input_container input{
+    flex: auto;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input_container button{
+    border: none;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download__app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.right .download__app_container h5{
+    color: grey;
+    font-weight: 400;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
     .navbar .app {
         font-size: 14px;
         padding: 10px;
         margin-left: 1%;
     }
-    .navbar .navmenu{
+    .navbar .navmenu {
         margin-right: 0px;
         gap: 22px;
     }
 }
 
-@media only screen and (max-width: 600px){
-    .navmenu a{
+@media only screen and (max-width: 600px) {
+    .navmenu a {
         display: none;
         font-size: 14px;
     }
-    .navbar i{
+    .navbar i {
         display: flex;
     }
-    .heroSection{
+    .heroSection {
         height: 70vh;
     }
-    .navbar .app{
-        display: none;  
+    .navbar .app {
+        display: none;
     }
-    .navmenu i{
+    .navmenu i {
         position: absolute;
         right: 15px;
-
     }
-    .navmenu i{
+    .navmenu i {
         display: flex;
     }
-    .logoname .logo{
+    .logoname .logo {
         width: 200px;
     }
-    .logoname .tagline{
+    .logoname .tagline {
         font-weight: 400;
         font-size: 30px;
     }
-    .logoname .searchbar{
-        width: 80%; 
+    .logoname .searchbar {
+        width: 80%;
     }
 }
