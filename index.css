@@ -88,7 +88,7 @@
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    width: 60%;
+    width: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -148,6 +148,9 @@
     transform: scale(1.05);
 }
 
+.we_offer_content{
+    padding-left: 15px;
+}
 .we_offer_content h2{
     text-align: left;
     font-weight: 400;
@@ -161,6 +164,9 @@
     font-weight: 300;
 }
 
+.collection_explore h1{
+    font-weight: 600;
+}
 
 @media only screen and (max-width: 900px){
     .navbar .app {
